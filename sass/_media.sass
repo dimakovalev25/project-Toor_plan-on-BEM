@@ -65,6 +65,18 @@
       background-color: $text-color
   .header-bottom
     display: none
+  .stars
+    flex-basis: 50%
+  .hotel
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__name
+        margin-top: 10px
+      &__rating
+        display: none
+      &__offer
+        order: -1
 
 @media (max-width: 576px)
   .container
