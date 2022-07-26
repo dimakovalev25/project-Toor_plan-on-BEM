@@ -27,6 +27,12 @@
   &-grid
     display: flex
     justify-content: space-between
+
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
 .stars
   flex-basis: 50%
 .offer
@@ -127,4 +133,38 @@
     margin-bottom: 8px
   &__descr
     margin-left: 9px
-  &__call-center
+  &__center
+    display: flex
+    justify-content: space-between
+    margin-bottom: 17px
+  &__heading
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: inherit
+    text-decoration: none
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__num
+    margin-left: 8px
+  &__button
+    width: 100%
+    min-height: 45px
+    border-radius: 4px
+    background-color: $primary
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $light
+    cursor: pointer
+.map
+  width: 347px
+  height: 213px
+  background-color: tomato
