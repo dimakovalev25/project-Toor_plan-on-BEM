@@ -1,84 +1,31 @@
-@media (max-width: 1990px)
-  .header__button_adapt
-    display: none
+@media (max-width: 1900px)
+	.header__button_adapt
+		display: none
 
 @media (max-width: 1200px)
-.container
-  max-width: 960px
-.header__button_adapt
-  display: none
+	header
+		.container
+			max-width: 900px
+		.header__button_adapt
+			display: none
 
 @media (max-width: 992px)
-  .container
-    max-width: 760px
-    .header-top
-      padding-top: 30px
-      padding-bottom: 30px
-    .logo
-      width: 132px
-    .header__search
-      margin-left: auto
-      max-width: 340px
-    .header__user
-    .header-menu
-      padding-top: 22px
-      padding-bottom: 22px
-      &__link
-        font-size: 12px
-        line-height: 15px
-  .header__button_adapt
-    display: none
-
-@media (max-width: 768px)
-  .container
-    max-width: 576px
-    width: 92%
-    .header-top
-      padding-top: 30px
-      padding-bottom: 30px
-    .logo
-      width: 132px
-    .header__search
-      display: none
-    .header__user
-      display: none
-    .header-menu
-      padding-top: 22px
-      padding-bottom: 22px
-      &__link
-        font-size: 12px
-        line-height: 15px
-  .header__button_adapt
-    width: 16px
-    height: 11px
-    padding: 0
-    display: flex
-    align-items: center
-    justify-content: space-between
-    flex-direction: column
-    border: none
-    background-color: #fff
-    cursor: pointer
-    &_line
-      width: 16px
-      height: 1px
-      background-color: $text-color
-  .header-bottom
-    display: none
-  .stars
-    flex-basis: 50%
-  .hotel
-    &-wrapper
-      justify-content: space-between
-    &-info
-      &__name
-        margin-top: 10px
-      &__rating
-        display: none
-      &__offer
-        order: -1
-
-@media (max-width: 576px)
-  .container
-    .logo
-      width: 99px
+	header
+		.container
+			max-width: 680px
+			&-top
+				padding-top: 30px
+				padding-bottom: 30px
+				.logo
+					width: 132px
+			&__search
+				margin-left: auto
+				max-width: 340px
+			&-menu
+				padding-top: 22px
+				padding-bottom: 22px
+				&__link
+					font-size: 12px
+					line-height: 15px
+			&__button_adapt
+				display: none
