@@ -1,0 +1,95 @@
+.slider
+	max-width: 1110px
+	margin: auto
+	// border: 4px solid tomato
+	&-title
+		font-style: normal
+		font-weight: 700
+		font-size: 36px
+		line-height: 45px
+		text-align: center
+		padding-bottom: 70px
+		text-transform: uppercase
+	.container
+		.carousel-wrapper
+			// border: 4px solid green
+			position: relative
+			height: 325px
+			width: 731px
+			margin: 0 auto
+			.carousel-item
+				position: absolute
+				top: 0px
+				bottom: 0
+				// left: 25%
+				right: 0
+				// padding: 25px 50px
+				opacity: 0
+				// transition: all 90s ease-in-out
+				&__avatar
+
+					position: absolute
+					top: -65px
+					right: 44%
+					margin-bottom: 9px
+					width: 90px
+					height: 90px
+					border-radius: 50%
+					object-fit: cover
+				&__username
+					margin-top: 45px
+					margin-bottom: 9px
+					font-style: normal
+					font-weight: 700
+					font-size: 12px
+					line-height: 15px
+					color: $primary
+					text-align: center
+				&__date
+					font-style: normal
+					font-weight: 600
+					font-size: 10px
+					line-height: 13px
+					color: #000000
+					display: block
+					text-align: center
+				&__rating
+					display: flex
+					justify-content: space-between
+					align-items: center
+					width: 50px
+					height: 10px
+					margin: 0 auto
+				&__descr
+					margin-top: 32px
+					font-style: normal
+					font-weight: 400
+					font-size: 12px
+					line-height: 160%
+					text-align: justify
+
+				.arrow
+					border: 4px solid black
+					border-width: 0 3px 3px 0
+					display: inline-block
+					padding: 4px
+				.arrow-prev
+					left: -30px
+					position: absolute
+					top: 50%
+					transform: translateY(-50%) rotate(135deg)
+				.arrow-next
+					right: -30px
+					position: absolute
+					top: 50%
+					transform: translateY(-50%) rotate(-45deg)
+			#item-1
+				z-index: 2
+			#item-1:target ~ .item-1
+				opacity: 1
+			#item-2:target ~ .item-2
+				z-index: 3
+				opacity: 1
+			#item-3:target ~ .item-3
+				z-index: 3
+				opacity: 1
